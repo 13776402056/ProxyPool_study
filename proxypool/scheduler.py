@@ -8,11 +8,13 @@ class Scheduler():
     def schedule_getter(self,cycle=GETTER_CYCLE):
         getter = Getter()
         while True:
-            print('开始抓取代理')
+            print('开启代理抓取')
             getter.run()
+
             time.sleep(cycle)
 
     def schedule_api(self):
+        print('开启API')
         app.run()
 
     #IP POOL启动主类
