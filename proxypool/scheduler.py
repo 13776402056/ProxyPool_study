@@ -15,6 +15,7 @@ class Scheduler():
     def schedule_api(self):
         app.run()
 
+    #IP POOL启动主类
     def run(self):
         if GETTER_ENABLED:
             tester_thread = threading.Thread(target=self.schedule_getter)
