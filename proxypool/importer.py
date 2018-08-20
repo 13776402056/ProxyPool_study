@@ -8,7 +8,7 @@ def set(proxy):
 
 
 def scan():
-    print('请输入代理 (127.0.0.1:2321),输入exit退出')
+    print('请输入代理 (127.0.0.1:2321),输入exit则退出')
     while True:
         proxy = input()
         if proxy == 'exit':
