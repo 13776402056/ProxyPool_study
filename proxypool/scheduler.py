@@ -10,14 +10,12 @@ class Scheduler():
         while True:
             print('开启代理抓取')
             getter.run()
-
             time.sleep(cycle)
 
     def schedule_api(self):
         print('开启API')
         app.run()
 
-    #IP POOL启动主类
     def run(self):
         if GETTER_ENABLED:
             tester_thread = threading.Thread(target=self.schedule_getter)
