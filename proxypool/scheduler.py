@@ -14,7 +14,7 @@ class Scheduler():
 
     def schedule_api(self):
         print('开启API')
-        app.run()
+        app.run(port=80)
 
     def run(self):
         if GETTER_ENABLED:
