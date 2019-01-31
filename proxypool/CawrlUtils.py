@@ -14,6 +14,7 @@ proxies = {
 def get_page(url,options={}):
     headers = dict(base_headers,**options)
     print('正在抓取',url)
+
     try:
         response = requests.get(url,headers=headers,proxies = proxies)
         print('抓取成功',url,response.status_code)
