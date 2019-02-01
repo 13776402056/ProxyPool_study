@@ -25,6 +25,7 @@ def persistproxy(sleeptime):
         try:
             threadLock.acquire()
             writefile = open(LOCAL_FILE_PATH, 'w', encoding='utf-8')
+            #hello
             for item in proxy_list:
                 writefile.write(item+'\n')
         finally:
