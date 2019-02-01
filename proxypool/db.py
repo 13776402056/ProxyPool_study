@@ -12,7 +12,6 @@ def readProxy():
         threadLock.acquire()
         readfile = open(LOCAL_FILE_PATH, 'r', encoding='UTF-8')
         for line in readfile:
-            print('saveren proxy finshed')
             proxy_list.append(line.replace('\n',''))
     finally:
         threadLock.release()
